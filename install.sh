@@ -65,7 +65,7 @@ After=network.target
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/3proxy /usr/local/etc/3proxy/3proxy.cfg
+ExecStart=/usr/local/bin/3proxy /usr/local/etc/3proxy/3proxy.cfg
 ExecReload=/bin/kill -HUP \$MAINPID
 PIDFile=/var/run/3proxy.pid
 Restart=always
